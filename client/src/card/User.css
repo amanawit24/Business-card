@@ -1,0 +1,197 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fa;
+}
+
+/* Container for Users component */
+.users {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header */
+.users h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Search bar */
+.users input[type="text"] {
+    padding: 8px 12px;
+    font-size: 16px;
+    width: calc(100% - 30px);
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+/* Add New User Button */
+.users button {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #4caf50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.users button:hover {
+    background-color: #45a049;
+}
+
+/* Table styles */
+.users table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.users table th, .users table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.users table th {
+    background-color: #f0f0f0;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Action buttons */
+.users table button {
+    padding: 6px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.users table button:hover {
+    opacity: 0.8;
+}
+
+.users table button:nth-child(1) {
+    background-color: #2196f3; /* Edit button */
+    color: #fff;
+}
+
+.users table button:nth-child(2) {
+    background-color: #f44336; /* Delete button */
+    color: #fff;
+}
+
+/* Pagination styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination button {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin: 0 5px;
+    border: none;
+    background-color: #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Modal styles */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.modal h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.modal label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.modal input[type="text"],
+.modal input[type="email"],
+.modal select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+}
+
+.modal button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.modal button[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.modal button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.modal button[type="button"] {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.modal button[type="button"]:hover {
+    background-color: #e53935;
+}
+
+/* Modal overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
